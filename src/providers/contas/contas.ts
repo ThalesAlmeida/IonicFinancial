@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import 'rxjs/add/operator/map';
+import {SQLite} from 'ionic-native';
 
 /*
   Generated class for the ContasProvider provider.
@@ -12,7 +14,7 @@ export class ContasProvider {
   list:any = [];
 
 
-  constructor(public http: HttpClient) {
+  constructor() {
     
   }
 
@@ -26,7 +28,7 @@ export class ContasProvider {
     return this.list;
   }
   
-  insert(conta){
+  insert(conta, successCallBack){
 
   }
 

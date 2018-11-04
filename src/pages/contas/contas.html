@@ -19,9 +19,13 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-list-sliding>
-
-    </ion-list-sliding>
+    <ion-item *ngFor="let item of listaContas">
+      {{item.descricao}}
+    </ion-item>
   </ion-list>
 
+  <ion-fab bottom right>
+  <button ion-fab color="danger" (click)="insert()"><ion-icon name="add"></ion-icon></button>
+  
+</ion-fab>
 </ion-content>

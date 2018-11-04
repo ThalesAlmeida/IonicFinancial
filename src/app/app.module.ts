@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ContasPage } from '../pages/contas/contas';
 import { ContasProvider } from '../providers/contas/contas';
+import { ModalContasPage } from '../pages/modal-contas/modal-contas';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ContasProvider } from '../providers/contas/contas';
     HomePage,
     TabsPage,
     ContasPage,
+    ModalContasPage,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,8 @@ import { ContasProvider } from '../providers/contas/contas';
     ContactPage,
     HomePage,
     TabsPage,
-    ContasPage
+    ContasPage,
+    ModalContasPage,
   ],
   providers: [
     StatusBar,
